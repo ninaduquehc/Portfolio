@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio Acadêmico</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>oi</h1>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfólio Marina Duque</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#curriculo" class="nav-link">Currículo</a></li>
+                        <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                        <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="container section">
+        <h2>Sobre Mim</h2>
+        <p><strong>Nome:</strong>Marina Duque de Holanda Cavalcanti</p>
+        <p><strong>Formação Atual:</strong> Desenvolvimento de Software Multiplataforma - FATEC</p>
+        <p><strong>Objetivo Acadêmico e Profissional:</strong> Atuar como desenvolvedora em diversas áreas digitais.</p>
+        <p><strong>Áreas de Interesse:</strong> Desenvolvimento Web, Design Digital, Inteligência Artificial</p>
+    </section>
+
+    <!-- CURRÍCULO -->
+    <section id="curriculo" class="container section">
+        <h2>Currículo</h2>
+
+        <h4>Formação</h4>
+        <p>FATEC - DSM (2024 - atual)</p>
+
+        <h4>Cursos</h4>
+        <ul>
+            <li>Arte, Jogos e Animação - SAGA</li>
+        </ul>
+
+        <h4>Certificados</h4>
+        <ul>
+            <li>Curso X - 2025</li>
+        </ul>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="container section">
+        <h2>Projetos</h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5>Projeto 1</h5>
+                        <p><strong>Problema:</strong> Organização de tarefas</p>
+                        <p><strong>Solução:</strong> Sistema estilo Trello</p>
+                        <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
+                        <a href="#" class="btn btn-primary">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="container section">
+        <h2>Habilidades</h2>
+
+        <h4>Técnicas</h4>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Node.js</li>
+            <li>MySQL</li>
+        </ul>
+
+        <h4>Comportamentais</h4>
+        <ul>
+            <li>Trabalho em equipe</li>
+            <li>Organização</li>
+            <li>Comunicação</li>
+        </ul>
+    </section>
+
+    <!-- EVENTOS -->
+    <section class="container section">
+        <h2>Eventos</h2>
+        <ul>
+            <li>Hackathon 2025</li>
+            <li>Semana da Tecnologia</li>
+        </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="container section">
+        <h2>Contato</h2>
+        <p>Email: seuemail@email.com</p>
+        <p>GitHub: github.com/seuuser</p>
+        <p>LinkedIn: linkedin.com/in/seuuser</p>
+    </section>
+
+    <footer class="text-white text-center p-3">
+        © 2026 - Seu Nome
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

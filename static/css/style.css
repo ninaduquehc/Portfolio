@@ -1,0 +1,69 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+html {
+    font-size: 100%; /* 1rem = 16px padrão */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4cdad;
+
+    /* 🔥 CORREÇÃO DO PROBLEMA DA NAVBAR */
+    padding-top: 5rem; /* substitui px por rem */
+}
+
+/* SEÇÕES */
+.section {
+    margin-bottom: 4rem;
+}
+
+/* TÍTULOS */
+h2 {
+    color: #942222;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    margin-top: 1.5rem;
+}
+
+/* CARDS */
+.card {
+    border: none;
+    background-color: #98c3a1;
+    border-radius: 1rem;
+}
+
+/* BOTÕES */
+.btn-primary {
+    background-color: #25857d;
+    border: none;
+    padding: 0.6rem 1.2rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #942222;
+    margin-top: 3rem;
+}
+
+/* RESPONSIVIDADE EXTRA */
+@media (max-width: 768px) {
+    body {
+        padding-top: 6rem; /* navbar maior no mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
