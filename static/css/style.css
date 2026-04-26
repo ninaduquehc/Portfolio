@@ -7,20 +7,36 @@
 
 /* BASE */
 html {
-    font-size: 100%; /* 1rem = 16px padrão */
+    font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #d4cdad;
+    padding-top: 7rem;
+}
 
-    /* 🔥 CORREÇÃO DO PROBLEMA DA NAVBAR */
-    padding-top: 5rem; /* substitui px por rem */
+/* HEADER / NAV */
+nav {
+    margin-bottom: 5rem;
+    background-color: #942222;
+    color: #d4cdad;
+}
+
+.navbar .nav-link {
+    color: #d4cdad;
+}
+
+.navbar .navbar-brand {
+    color: #d4cdad;
+    font-size:x-large;
 }
 
 /* SEÇÕES */
 .section {
     margin-bottom: 4rem;
+    scroll-margin-top: 7rem;
 }
 
 /* TÍTULOS */
@@ -33,14 +49,13 @@ h4 {
     margin-top: 1.5rem;
 }
 
-/* CARDS */
+/* COMPONENTES */
 .card {
     border: none;
     background-color: #98c3a1;
     border-radius: 1rem;
 }
 
-/* BOTÕES */
 .btn-primary {
     background-color: #25857d;
     border: none;
@@ -50,20 +65,17 @@ h4 {
 /* FOOTER */
 footer {
     background-color: #942222;
+    color:#d4cdad;
     margin-top: 3rem;
 }
 
-/* RESPONSIVIDADE EXTRA */
+/* RESPONSIVO */
 @media (max-width: 768px) {
     body {
-        padding-top: 6rem; /* navbar maior no mobile */
+        padding-top: 6rem;
     }
 
     h2 {
         font-size: 1.5rem;
     }
-}
-
-html {
-    scroll-behavior: smooth;
 }
