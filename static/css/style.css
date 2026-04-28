@@ -11,29 +11,47 @@ html {
     scroll-behavior: smooth;
 }
 
+/* BODY EM GRID */
 body {
     font-family: Arial, sans-serif;
     background-color: #d4cdad;
-    padding-top: 7rem;
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+    padding-top: 7rem; /* navbar fixa */
 }
 
-/* HEADER / NAV */
+/* ÁREAS */
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* NAV */
 nav {
-    margin-bottom: 5rem;
     background-color: #942222;
-    color: #d4cdad;
 }
 
-.navbar .nav-link {
-    color: #d4cdad;
-}
-
+.navbar .nav-link,
 .navbar .navbar-brand {
     color: #d4cdad;
-    font-size:x-large;
 }
 
-/* GRID */
+/* GRID SOBRE */
 .sobre-grid {
     display: grid;
     grid-template-columns: 5fr 3fr;
@@ -41,20 +59,49 @@ nav {
     align-items: center;
 }
 
-.sobre-imagem img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.curriculo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas */
+    gap: 2rem;
 }
 
 @media (max-width: 768px) {
-    .sobre-grid {
+    .curriculo-grid {
         grid-template-columns: 1fr;
     }
 }
 
+/*  GRID HABILIDADES */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* IMAGEM */
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .sobre-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding-top: 6rem;
+    }
+}
+
+/* BOX SOBRE */
 .sobre-box {
-    background-color: #98c3a1; 
+    background-color: #98c3a1;
     padding: 2rem;
     border-radius: 1.5rem;
 }
@@ -72,24 +119,22 @@ h2 {
 }
 
 h4 {
-    margin-top: 1.5rem;
-}
-
-h4 {
     color: #25857d;
+    margin-top: 1.5rem;
 }
 
 h5 {
     margin-bottom: 1.7rem;
 }
 
-/* COMPONENTES */
+/* CARDS */
 .card {
     border: none;
     background-color: #98c3a1;
     border-radius: 1rem;
 }
 
+/* BOTÃO */
 .btn-primary {
     background-color: #25857d;
     border: none;
@@ -99,17 +144,6 @@ h5 {
 /* FOOTER */
 footer {
     background-color: #942222;
-    color:#d4cdad;
+    color: #d4cdad;
     margin-top: 3rem;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    body {
-        padding-top: 6rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
 }
