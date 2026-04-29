@@ -59,10 +59,44 @@ nav {
     align-items: center;
 }
 
+/* GRID CURRICULO */
 .curriculo-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 colunas */
     gap: 2rem;
+}
+
+.curriculo-grid div {
+    background-color: #bd3737;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.curriculo-box {
+    background-color: rgba(152, 195, 161, 0.25);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.curriculo-grid h4 {
+    border-left: 5px solid #98c3a1;
+    color: #98c3a1;
+    padding-left: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.curriculo-grid {
+    gap: 2.5rem;
+}
+
+/* LISTAS */
+ul {
+    padding-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -125,6 +159,17 @@ h4 {
 
 h5 {
     margin-bottom: 1.7rem;
+}
+
+/* LINKS */
+a {
+    color: #000000; /* cor normal */
+    text-decoration: none; /* tira o sublinhado */
+}
+
+a:hover {
+    color: #25857d; 
+    text-decoration:underline;
 }
 
 /* CARDS */
