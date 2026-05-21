@@ -1,4 +1,34 @@
-/* RESET */
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+
+    /* CORES PRINCIPAIS */
+    --cor-vinho: #942222;
+    --cor-verde: #25857d;
+    --cor-verde-claro: #98c3a1;
+    --cor-bege: #d4cdad;
+    --cor-preta: #000000;
+    --cor-branca: #ffffff;
+
+    /* SOMBRAS */
+    --sombra-suave: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --sombra-card: 0 10px 20px rgba(0, 0, 0, 0.15);
+    --sombra-imagem: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    /* TRANSIÇÕES */
+    --transicao: 0.3s ease;
+
+    /* BORDAS */
+    --radius-padrao: 1rem;
+    --radius-grande: 1.5rem;
+    --radius-pill: 999px;
+}
+
+/* =========================
+   RESET
+========================= */
 
 * {
     margin: 0;
@@ -11,10 +41,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #d4cdad;
+    background-color: var(--cor-bege);
 
     display: grid;
     grid-template-areas:
@@ -25,35 +54,13 @@ body {
     grid-template-rows: auto 1fr auto;
 
     min-height: 100vh;
+
     padding-top: 7rem;
 }
 
-/* TIPOGRAFIA */
-
-h2 {
-    color: #942222;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-}
-
-h4 {
-    color: #25857d;
-    margin-top: 1.5rem;
-    font-weight: 700;
-}
-
-h5 {
-    margin-bottom: 1.7rem;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #25857d;
-    text-decoration: underline;
+img {
+    max-width: 100%;
+    display: block;
 }
 
 ul {
@@ -64,7 +71,40 @@ li {
     margin-bottom: 0.5rem;
 }
 
-/* LAYOUT */
+a {
+    color: var(--cor-preta);
+    text-decoration: none;
+    transition: var(--transicao);
+}
+
+a:hover {
+    color: var(--cor-verde);
+    text-decoration: underline;
+}
+
+/* =========================
+   TIPOGRAFIA
+========================= */
+
+h2 {
+    color: var(--cor-vinho);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+h4 {
+    color: var(--cor-verde);
+    margin-top: 1.5rem;
+    font-weight: 700;
+}
+
+h5 {
+    margin-bottom: 1.7rem;
+}
+
+/* =========================
+   LAYOUT
+========================= */
 
 header {
     grid-area: header;
@@ -77,8 +117,8 @@ main {
 footer {
     grid-area: footer;
 
-    background-color: #942222;
-    color: #d4cdad;
+    background-color: var(--cor-vinho);
+    color: var(--cor-bege);
 
     margin-top: 3rem;
 }
@@ -86,9 +126,12 @@ footer {
 footer p,
 .direitos-autorais {
     text-align: center;
-    color: #d4cdad;
+    color: var(--cor-bege);
+
     opacity: 0.65;
+
     font-size: 0.85rem;
+
     margin-bottom: 0;
 }
 
@@ -97,37 +140,43 @@ footer p,
     scroll-margin-top: 7rem;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 nav {
-    background-color: #942222;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+    background-color: var(--cor-vinho);
 
-.navbar-brand:hover {
-    color: #d4cdad;
-    text-decoration: none;
+    backdrop-filter: blur(10px);
+
+    box-shadow: var(--sombra-suave);
 }
 
 .navbar .nav-link,
 .navbar .navbar-brand {
-    color: #d4cdad;
+    color: var(--cor-bege);
+}
+
+.navbar-brand:hover {
+    color: var(--cor-bege);
+    text-decoration: none;
 }
 
 .navbar .nav-link {
-    transition: 0.3s;
+    transition: var(--transicao);
 }
 
 .navbar .nav-link:hover {
-    color: #98c3a1;
+    color: var(--cor-verde-claro);
 }
 
-/* BOTÕES */
+/* =========================
+   BOTÕES
+========================= */
 
 .btn-primary {
-    background-color: #25857d;
-    color: #d4cdad;
+    background-color: var(--cor-verde);
+    color: var(--cor-bege);
 
     border: none;
 
@@ -137,18 +186,18 @@ nav {
 
     font-weight: bold;
 
-    transition: 0.3s;
+    transition: var(--transicao);
 }
 
 .btn-primary:hover {
-    background-color: #1c6660;
+    background-color: var(--cor-verde);
     transform: scale(1.03);
 }
 
 .btn-outline-light {
-    border: 2px solid #d4cdad;
+    border: 2px solid var(--cor-bege);
 
-    color: #d4cdad;
+    color: var(--cor-bege);
 
     padding: 0.9rem 1.8rem;
 
@@ -156,24 +205,27 @@ nav {
 
     font-weight: 600;
 
-    transition: 0.3s;
+    transition: var(--transicao);
 }
 
 .btn-outline-light:hover {
-    background-color: #d4cdad;
-    color: #942222;
+    background-color: var(--cor-bege);
+    color: var(--cor-vinho);
+
     transform: translateY(-3px);
 }
 
-/* CARDS */
+/* =========================
+   CARDS
+========================= */
 
 .card,
 .curriculo-grid div,
 .sobre-box,
 .habilidades-box,
 .evento-box {
-    transition: 0.3s ease;
-    border-radius: 1.5rem;
+    transition: var(--transicao);
+    border-radius: var(--radius-grande);
 }
 
 .card:hover,
@@ -182,20 +234,22 @@ nav {
 .habilidades-box:hover,
 .evento-box:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--sombra-card);
 }
 
 .card {
     border: none;
-    background-color: #98c3a1;
-    border-radius: 1rem;
+    background-color: var(--cor-verde-claro);
+    border-radius: var(--radius-padrao);
 }
 
 .card-body p {
     line-height: 1.6;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: 85vh;
@@ -208,31 +262,41 @@ nav {
 
     padding: 4rem 8%;
 
-    background: linear-gradient(135deg,
-            #942222 0%,
-            #7e1d1d 100%);
+    background: linear-gradient(
+        135deg,
+        var(--cor-vinho) 0%,
+        var(--cor-vinho) 100%
+    );
 
     border-radius: 2rem;
 
     margin: 2rem auto 5rem auto;
 }
 
+.hero-texto {
+    max-width: 650px;
+}
+
 .hero-texto h1 {
     font-size: 4rem;
-    color: #d4cdad;
-
     font-weight: 700;
 
     line-height: 1.1;
 
+    color: var(--cor-bege);
+
     margin-bottom: 1.5rem;
+}
+
+.hero-texto span {
+    color: var(--cor-verde);
 }
 
 .hero-subtitulo {
     font-size: 1.3rem;
-    color: #f3eed7;
-
     line-height: 1.8;
+
+    color: var(--cor-bege);
 
     max-width: 600px;
 
@@ -258,14 +322,6 @@ nav {
     justify-content: center;
 }
 
-.hero-texto {
-    max-width: 650px;
-}
-
-.hero-texto span {
-    color: #25857d;
-}
-
 .hero-imagem img {
     width: 380px;
     height: 380px;
@@ -274,12 +330,14 @@ nav {
 
     border-radius: 50%;
 
-    border: 6px solid #98c3a1;
+    border: 6px solid var(--cor-verde-claro);
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--sombra-imagem);
 }
 
-/* SOBRE */
+/* =========================
+   SOBRE
+========================= */
 
 .sobre-grid {
     display: grid;
@@ -291,11 +349,9 @@ nav {
 }
 
 .sobre-box {
-    background-color: #98c3a1;
+    background-color: var(--cor-verde-claro);
 
     padding: 3rem;
-
-    border-radius: 1.5rem;
 }
 
 .sobre-texto h2 {
@@ -324,134 +380,147 @@ nav {
 
     object-fit: cover;
 
-    border-radius: 1rem;
+    border-radius: var(--radius-padrao);
 }
 
-/* CURRÍCULO */
+/* =========================
+   CURRÍCULO
+========================= */
 
 .curriculo-box {
     background-color: rgba(152, 195, 161, 0.25);
 
     padding: 2rem;
 
-    border-radius: 1.5rem;
+    border-radius: var(--radius-grande);
 }
 
 .curriculo-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
     gap: 2.5rem;
 }
 
 .curriculo-grid div {
-    background-color: #942222;
+    background-color: var(--cor-vinho);
 
     padding: 1.5rem;
 
-    border-radius: 1rem;
+    border-radius: var(--radius-padrao);
 }
 
 .curriculo-grid h4 {
-    border-left: 5px solid #98c3a1;
+    color: var(--cor-verde-claro);
 
-    color: #98c3a1;
+    border-left: 5px solid var(--cor-verde-claro);
 
     padding-left: 0.7rem;
 
     margin-bottom: 1rem;
 }
 
-.curriculo-grid a {
-    color: #d4cdad;
-}
-
+.curriculo-grid a,
 .curriculo-grid li {
-    color: #d4cdad;
+    color: var(--cor-bege);
 }
 
 .curriculo-grid a:hover {
-    color: #98c3a1;
+    color: var(--cor-verde-claro);
 }
 
 #curriculo h2 a {
-    color: #942222;
+    color: var(--cor-vinho);
     text-decoration: none;
 }
 
 #curriculo h2 a:hover {
-    color: #25857d;
+    color: var(--cor-verde);
     text-decoration: underline;
 }
 
-/* HABILIDADES */
+/* =========================
+   HABILIDADES
+========================= */
 
 .habilidades-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     gap: 2rem;
 }
 
 .habilidades-box {
-    background-color: #942222;
+    background-color: var(--cor-vinho);
+
     padding: 2rem;
-    border-radius: 1.5rem;
 }
 
 .habilidades-box h4 {
-    color: #98c3a1;
-    border-left: 5px solid #98c3a1;
+    color: var(--cor-verde-claro);
+
+    border-left: 5px solid var(--cor-verde-claro);
+
     padding-left: 0.7rem;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
+
     gap: 1rem;
+
     margin-top: 1.5rem;
 }
 
 .tags span {
-    background-color: #d4cdad;
-    color: #000000;
+    background-color: var(--cor-bege);
+    color: var(--cor-preta);
+
     padding: 0.7rem 1rem;
-    border-radius: 999px;
+
+    border-radius: var(--radius-pill);
+
     font-weight: 600;
-    transition: 0.3s;
+
+    transition: var(--transicao);
 }
 
 .tags span:hover {
+    background-color: var(--cor-verde-claro);
+
     transform: translateY(-3px);
-    background-color: #98c3a1;
 }
 
-/* EVENTOS */
+/* =========================
+   EVENTOS
+========================= */
 
 .evento-box {
-    background-color: #98c3a1;
+    background-color: var(--cor-verde-claro);
 
     padding: 2rem;
 
-    border-left: 5px solid #25857d;
+    border-left: 5px solid var(--cor-verde);
 
-    border-radius: 1rem;
+    border-radius: var(--radius-padrao);
 }
 
 .evento-item {
     display: flex;
 
-    gap: 2rem;
-
     align-items: flex-start;
+
+    gap: 2rem;
 }
 
 .evento-data {
-    background-color: #25857d;
-
-    color: #d4cdad;
+    background-color: var(--cor-verde);
+    color: var(--cor-bege);
 
     padding: 0.5rem 1rem;
 
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
 
     font-weight: bold;
 
@@ -460,10 +529,12 @@ nav {
     text-align: center;
 }
 
-/* CONTATO */
+/* =========================
+   CONTATO
+========================= */
 
 #contato {
-    background-color: #942222;
+    background-color: var(--cor-vinho);
 
     padding-top: 3.5rem;
     padding-bottom: 2.5rem;
@@ -477,12 +548,13 @@ nav {
 
 #contato a,
 #contato li,
-#contato p {
-    color: #d4cdad;
+#contato p,
+.contato-lista i {
+    color: var(--cor-bege);
 }
 
 #contato a:hover {
-    color: #25857d;
+    color: var(--cor-verde);
 }
 
 .contato-lista {
@@ -490,9 +562,9 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 
-    list-style: none;
-
     width: 100%;
+
+    list-style: none;
 
     gap: 2rem;
 
@@ -513,10 +585,11 @@ nav {
 
 .contato-lista i {
     font-size: 1.2rem;
-    color: #d4cdad;
 }
 
-/* RESPONSIVO */
+/* =========================
+   RESPONSIVO
+========================= */
 
 @media (max-width: 1200px) {
 
@@ -553,13 +626,11 @@ nav {
 
     .hero-texto h1 {
         font-size: 2.5rem;
-
         line-height: 1.2;
     }
 
     .hero-subtitulo {
         font-size: 1.1rem;
-
         line-height: 1.7;
 
         max-width: 500px;
