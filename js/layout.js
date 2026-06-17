@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <li class="nav-item"><a href="index.html#curriculo" class="nav-link">Currículo</a></li>
             <li class="nav-item"><a href="index.html#projetos" class="nav-link">Projetos</a></li>
             <li class="nav-item"><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="index.html#eventos" class="nav-link">Eventos</a></li>
           </ul>
         </div>
       </div>
