@@ -63,7 +63,9 @@ Site com identidade visual moderna e consistente.
         images: [
             "static/imagens/projetos/universidade_1.png",
             "static/imagens/projetos/universidade_2.png",
-            "static/imagens/projetos/universidade_3.png"
+            "static/imagens/projetos/universidade_3.png",
+            "static/imagens/projetos/universidade_4.png",
+            "static/imagens/projetos/universidade_5.png"
         ]
     },
 
