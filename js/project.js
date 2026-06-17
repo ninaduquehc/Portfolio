@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // TEXTO PRINCIPAL
     // =========================
     document.getElementById("title").innerText = project.title;
-    document.getElementById("desc").innerHTML =
-        formatToCards(project.fullDescription || project.description);
+    document.getElementById("short-desc").innerText = project.description; // ← adiciona essa linha
+    document.getElementById("desc").innerHTML = formatToCards(project.fullDescription || project.description);
 
     // sidebar
     const sideTitle = document.getElementById("titleSide");

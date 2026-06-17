@@ -2,18 +2,14 @@ const projects = [
     {
         id: "radar-cidadao",
         title: "API - Radar Cidadão - Trabalho em Equipe",
-        description: "Sistema para simplificar dados públicos sobre candidatos à reeleição.",
+        description: "Sistema para simplificar dados públicos sobre candidatos à reeleição. Projeto desenvolvido com foco em acessibilidade de dados públicos complexos.",
         fullDescription: `
-Projeto desenvolvido com foco em acessibilidade de dados públicos complexos.
 
 Problema e Objetivo:
 Facilitar o acesso e a compreensão, pela maioria da população, dos dados públicos complexos sobre deputados candidatos à reeleição.
 
 Solução:
 Criação de um site que simplifica dados complexos, tornando-os claros e úteis para a população entender e comparar candidatos.
-
-Tecnologias:
-Python, HTML, CSS, Colab, Jira, Bootstrap
 
 Metodologia:
 SCRUM
@@ -41,9 +37,8 @@ Atuei como Scrum Master, organizando e distribuindo tarefas da equipe por meio d
     {
         id: "universidade-ficticia",
         title: "Universidade Fictícia - Studio KeyFrame",
-        description: "Site responsivo criado para prática de HTML, CSS e Bootstrap.",
+        description: "Site responsivo criado para prática de HTML, CSS e Bootstrap. Projeto acadêmico desenvolvido em aula para fixação de conteúdo.",
         fullDescription: `
-Projeto acadêmico desenvolvido em aula para fixação de conteúdo.
 
 Problema:
 Atividade proposta pelo professor de Desenvolvimento Web e Design Digital.
@@ -53,9 +48,6 @@ Criar um site responsivo utilizando HTML, CSS e Bootstrap com interface limpa e 
 
 Solução:
 Desenvolvimento de um site fictício chamado Studio KeyFrame com 3 páginas interligadas (Home, Sobre e Contato).
-
-Tecnologias:
-HTML, CSS, Bootstrap
 
 Metodologia:
 Desenvolvimento rápido orientado por aula prática.
@@ -78,9 +70,8 @@ Site com identidade visual moderna e consistente.
     {
         id: "prototipacao-lumiere",
         title: "Prototipação - Loja Lumière",
-        description: "Projeto de wireframe, mockup e protótipo no Figma.",
+        description: "Projeto de wireframe, mockup e protótipo no Figma. Projeto de design focado em prototipação de interface.",
         fullDescription: `
-Projeto de design focado em prototipação de interface.
 
 Problema:
 Exercício acadêmico sobre Wireframe, Mockup e Protótipo.
@@ -90,9 +81,6 @@ Criar todas as etapas de prototipação de um site fictício.
 
 Solução:
 Desenvolvimento da loja fictícia Lumière com 4 páginas principais no Figma.
-
-Tecnologias:
-Figma
 
 Metodologia:
 Prototipação de interface (UX/UI design).
@@ -120,18 +108,14 @@ Protótipo navegável com identidade visual completa e estrutura bem definida.
     {
         id: "ecommerce-lumiere",
         title: "E-commerce Lumière",
-        description: "Loja virtual com Flask, MySQL e Docker.",
+        description: "Loja virtual com Flask, MySQL e Docker. Projeto completo de e-commerce desenvolvido com backend em Flask.",
         fullDescription: `
-Projeto completo de e-commerce desenvolvido com backend em Flask.
 
 Problema:
 Criar uma loja virtual funcional com autenticação, catálogo e carrinho.
 
 Solução:
 Sistema web com Flask + MySQL + Docker.
-
-Tecnologias:
-Flask, MySQL, Docker, Bootstrap
 
 Funcionalidades:
 - Login e registro de usuários

@@ -5,17 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto</title>
-
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="static/css/style.css">
-
-    <!-- Fonte -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
@@ -24,63 +16,46 @@
 
     <main class="container section project-page">
 
-        <!-- =========================
-             CARROSSEL
-        ========================== -->
+        <!-- CARROSSEL -->
         <div class="project-hero">
-
             <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-
-                <!-- indicadores -->
                 <div class="carousel-indicators" id="carousel-indicators"></div>
-
-                <!-- imagens -->
                 <div class="carousel-inner" id="carousel-inner"></div>
-
-                <!-- controles -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-
                 <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
-
             </div>
-
         </div>
 
-        <!-- =========================
-             GRID PRINCIPAL
-        ========================== -->
-
+        <!-- TÍTULO -->
         <h1 id="title" class="project-title"></h1>
+
+        <!-- GRID -->
         <div class="project-grid">
 
-            <!-- =========================
-                 COLUNA ESQUERDA
-            ========================== -->
+            <!-- COLUNA ESQUERDA -->
             <div class="project-left">
-
                 <div id="desc" class="project-description"></div>
-
             </div>
 
-            <!-- =========================
-                 SIDEBAR DIREITA
-            ========================== -->
+            <!-- COLUNA DIREITA -->
             <aside class="project-right">
 
-                <!-- tecnologias -->
-                <h1 class="section-title">Tecnologias</h1>
-                <div id="tech" class="project-tech"></div>
+                <div class="project-sidebar-box">
+                    <p id="short-desc" class="project-short-desc"></p>
+                </div>
 
-                <!-- link -->
-                <a id="link" class="project-link btn btn-primary" target="_blank">
-                    Ver Projeto
-                </a>
+                <div class="project-sidebar-box">
+                    <p class="project-sidebar-label">Tecnologias</p>
+                    <div id="tech" class="project-tech"></div>
+                </div>
+
+                <a id="link" class="project-link" target="_blank">Ver Projeto</a>
 
             </aside>
 
@@ -88,13 +63,9 @@
 
     </main>
 
-    <!-- =========================
-         SCRIPTS
-    ========================== -->
     <script src="data/projects.js"></script>
     <script src="js/project.js"></script>
     <script src="js/layout.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

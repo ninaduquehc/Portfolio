@@ -30,18 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
       <ul class="contato-lista">
 
         <li>
-          <i class="bi bi-envelope-fill"></i>
-          <a href="mailto:marinaduque2006@email.com">Email</a>
+          <i class="bi bi-github"></i>
+          <a href="https://github.com/ninaduquehc" target="_blank">ninaduquehc</a>
         </li>
 
         <li>
-          <i class="bi bi-github"></i>
-          <a href="https://github.com/ninaduquehc" target="_blank">GitHub</a>
+          <i class="bi bi-envelope-fill"></i>
+          <a href="mailto:marinaduque2006@email.com">marinaduque2006@gmail.com</a>
         </li>
 
         <li>
           <i class="bi bi-linkedin"></i>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://linkedin.com" target="_blank">marina-cavalcanti</a>
         </li>
 
       </ul>
