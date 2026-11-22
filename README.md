@@ -1,15 +1,18 @@
-# 🗂️ Portfólio — Marina Duque
+# 🗂️ Portfólio Acadêmico — Marina Duque
 
-Site pessoal desenvolvido com HTML, CSS e JavaScript. Os projetos são gerenciados como dados e renderizados dinamicamente na página.
+Portfólio acadêmico digital desenvolvido com HTML, CSS e JavaScript para o curso de Desenvolvimento de Software Multiplataforma (DSM) da FATEC São José dos Campos. Os projetos são gerenciados como dados e renderizados dinamicamente na página.
 
 ---
 
 ## ✨ Funcionalidades
 
-- Página inicial com seções de apresentação, currículo, projetos e habilidades
-- Página de detalhes de cada projeto gerada dinamicamente via JavaScript
+- Apresentação pessoal com foto, formação, objetivos e áreas de interesse
+- Currículo com formação, cursos, medalhas e certificados
+- Projetos separados em Acadêmicos (API), Profissionais e Pessoais
+- Página de detalhes de cada projeto gerada dinamicamente via JavaScript, com empresa parceira, problema, solução, contribuições pessoais, hard skills e soft skills
+- Habilidades técnicas com nível de domínio (de 1 a 5 estrelas)
+- Eventos e participações com carrossel de imagens
 - Navbar e footer injetados automaticamente nas páginas
-- Carrossel de imagens por projeto
 
 ---
 
@@ -26,33 +29,17 @@ Site pessoal desenvolvido com HTML, CSS e JavaScript. Os projetos são gerenciad
 │   ├── 📁 css
 │   │   └── 🎨 style.css
 │   ├── 📁 imagens
+│   │   ├── 📁 eventos
+│   │   │   ├── 🖼️ interfatec.jpeg
+│   │   │   ├── 🖼️ certificado.png
+│   │   │   ├── 🖼️ pit.jpeg
+│   │   │   ├── 🖼️ colmeia.jpeg
+│   │   │   └── 🖼️ pit.certif.png
 │   │   ├── 📁 projetos
-│   │   │   ├── 🖼️ api_2.png
-│   │   │   ├── 🖼️ api_3.png
-│   │   │   ├── 🖼️ api_4.png
-│   │   │   ├── 🖼️ api_5.png
-│   │   │   ├── 🖼️ api_7.png
-│   │   │   ├── 🖼️ lumiere_1.PNG
-│   │   │   ├── 🖼️ lumiere_2.PNG
-│   │   │   ├── 🖼️ lumiere_3.PNG
-│   │   │   ├── 🖼️ lumiere_4.PNG
-│   │   │   ├── 🖼️ lumiere_5.PNG
-│   │   │   ├── 🖼️ lumiere_6.PNG
-│   │   │   ├── 🖼️ lumiere_7.PNG
-│   │   │   ├── 🖼️ lumiere_8.PNG
-│   │   │   ├── 🖼️ prototipo_1.png
-│   │   │   ├── 🖼️ prototipo_2.png
-│   │   │   ├── 🖼️ prototipo_3.png
-│   │   │   ├── 🖼️ prototipo_4.png
-│   │   │   ├── 🖼️ prototipo_5.png
-│   │   │   ├── 🖼️ prototipo_6.png
-│   │   │   ├── 🖼️ prototipo_7.png
-│   │   │   ├── 🖼️ prototipo_8.png
-│   │   │   ├── 🖼️ universidade_1.png
-│   │   │   ├── 🖼️ universidade_2.png
-│   │   │   ├── 🖼️ universidade_3.png
-│   │   │   ├── 🖼️ universidade_4.png
-│   │   │   └── 🖼️ universidade_5.png
+│   │   │   ├── 🖼️ api_2.png ... api_7.png
+│   │   │   ├── 🖼️ lumiere_1.PNG ... lumiere_8.PNG
+│   │   │   ├── 🖼️ prototipo_1.png ... prototipo_8.png
+│   │   │   └── 🖼️ universidade_1.png ... universidade_5.png
 │   │   ├── 🖼️ Marina Duque.jpeg
 │   │   └── 🖼️ marina-foto-descontraida.jpeg
 │   └── 📁 pdf
@@ -66,11 +53,11 @@ Site pessoal desenvolvido com HTML, CSS e JavaScript. Os projetos são gerenciad
 
 ## ⚙️ Arquitetura do projeto
 
-**`data/projects.js`** — define a lista de projetos com título, descrição, tecnologias, imagens e link. É o único lugar que precisa ser editado para adicionar ou atualizar um projeto.
+**`data/projects.js`** — define a lista de projetos com título, categoria, empresa parceira, problema, solução, tecnologias, contribuições, hard skills, soft skills, imagens e link do repositório. É o único lugar que precisa ser editado para adicionar ou atualizar um projeto.
 
-**`js/home.js`** — lê a lista e cria um card para cada projeto na página inicial.
+**`js/home.js`** — lê a lista e cria um card para cada projeto na página inicial, agrupando por categoria.
 
-**`js/project.js`** — lê o `id` da URL (`project.html?id=radar-cidadao`), busca o projeto correspondente na lista e preenche todos os elementos da página: título, descrição formatada, carrossel de imagens e tags de tecnologia.
+**`js/project.js`** — lê o `id` da URL (`project.html?id=radar-cidadao`), busca o projeto correspondente na lista e preenche a página: título, cards de descrição, carrossel de imagens e tags de tecnologia.
 
 **`js/layout.js`** — injeta a navbar e o footer em todas as páginas automaticamente, evitando repetição de código HTML.
 
@@ -90,7 +77,7 @@ Site pessoal desenvolvido com HTML, CSS e JavaScript. Os projetos são gerenciad
 
 ## 🚀 Como rodar localmente
 
-Por usar módulos JavaScript com múltiplos arquivos, o projeto precisa de um servidor local — não funciona abrindo o `index.html` direto no navegador.
+Por usar arquivos JavaScript separados, o ideal é rodar o projeto em um servidor local em vez de abrir o `index.html` direto no navegador.
 
 Com a extensão **Live Server** no VS Code, clique com o botão direito no `index.html` e selecione *Open with Live Server*.
 
@@ -106,19 +93,23 @@ npx serve .
 
 - HTML e CSS
 - JavaScript
-- Bootstrap
+- Bootstrap e Bootstrap Icons
 - Google Fonts
-- Vercel
+- GitHub Pages
 
 ---
 
-## 🔗 Deploy
+## 🔗 Acesse o portfólio
 
-[portfolio-xi-two-e0kvwqx64c.vercel.app](https://portfolio-xi-two-e0kvwqx64c.vercel.app)
+[https://ninaduquehc.github.io/Portfolio/](https://ninaduquehc.github.io/Portfolio/)
 
 ---
 
 ## 👩‍💻 Autora
 
 **Marina Duque de Holanda Cavalcanti**
-[Email](mailto:marinaduque2006@email.com)
+Cursando Desenvolvimento de Software Multiplataforma — FATEC São José dos Campos
+
+- GitHub: [ninaduquehc](https://github.com/ninaduquehc)
+- LinkedIn: [marina-cavalcanti](https://www.linkedin.com/in/marina-cavalcanti-53b3503b8/)
+- E-mail: [marinaduque2006@gmail.com](mailto:marinaduque2006@gmail.com)
