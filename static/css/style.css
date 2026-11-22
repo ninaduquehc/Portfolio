@@ -278,7 +278,7 @@ nav {
    HABILIDADES
 ========================= */
 
-.habilidades-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.habilidades-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
 
 .habilidades-box {
     background-color: var(--cor-vinho);
@@ -636,3 +636,13 @@ nav {
     margin-bottom: 1.5rem;
 }
 .project-back:hover { color: var(--cor-verde); }
+
+.habilidades-box .skills-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+}
+
+@media (max-width: 992px) {
+    .habilidades-box .skills-lista { grid-template-columns: 1fr; }
+}
