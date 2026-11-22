@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Acadêmico</title>
+    <title>Portfólio Acadêmico - Marina Duque</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,42 +41,41 @@
                 </p>
 
                 <div class="hero-botoes">
-
                     <a href="static/pdf/curriculo_marina_duque.pdf" target="_blank" class="btn btn-outline-light">
                         Baixar Currículo
                     </a>
-
                 </div>
             </div>
 
             <div class="hero-imagem">
-                <img src="static/imagens/Marina Duque.jpeg" alt="Marina Duque">
+                <img src="static/imagens/Marina Duque.jpeg" alt="Foto de Marina Duque">
             </div>
 
         </section>
 
-        <!-- SOBRE -->
+        <!-- SOBRE / APRESENTAÇÃO PESSOAL -->
         <section id="sobre" class="container section">
             <div class="sobre-box">
                 <div class="sobre-grid">
 
                     <div class="sobre-texto">
                         <h2>Sobre Mim</h2>
-                        <h3><strong>Marina Duque de Holanda de Holanda Cavalcanti</strong></h3>
-                        <p><strong>Formação Atual:</strong> Cursando DSM - FATEC</p>
-                        <p><strong>Objetivo:</strong> Atuar como desenvolvedora digital</p>
-                        <p><strong>Áreas:</strong> Web, Design, IA</p>
+                        <h3><strong>Marina Duque de Holanda Cavalcanti</strong></h3>
+                        <p><strong>Formação atual:</strong> Desenvolvimento de Software Multiplataforma (DSM) - FATEC São José dos Campos</p>
+                        <p><strong>Objetivo acadêmico:</strong> Concluir o curso de Desenvolvimento de Software Multiplataforma na FATEC aprofundando meus conhecimentos em desenvolvimento web, design de interfaces e IA, e participar de projetos e eventos que me aproximem de problemas reais.</p>
+                        <p><strong>Objetivo profissional:</strong> Atuar como desenvolvedora de software, unindo minha experiência em UI/UX e QA com a programação para criar produtos bem pensados e confiáveis. Busco também me aprofundar na parte de desenvolvimento de softwares de design de animação, juntanso meus interesses em atuar em áreas de tecnologia e de artes.</p>
+                        <p><strong>Áreas de interesse:</strong> Design Digital e Inteligência Artificial</p>
                     </div>
 
                     <div class="sobre-imagem">
-                        <img src="static/imagens/marina-foto-descontraida.jpeg" alt="Foto de Perfil">
+                        <img src="static/imagens/marina-foto-descontraida.jpeg" alt="Foto de perfil de Marina Duque">
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- CURRÍCULO -->
+        <!-- CURRÍCULO / INFORMAÇÕES CURRICULARES -->
         <section id="curriculo" class="container section">
 
             <h2>
@@ -90,7 +89,7 @@
                 <div>
                     <h4>Formação</h4>
                     <ul>
-                        <li>FATEC - DSM</li>
+                        <li>FATEC São José dos Campos - DSM</li>
                     </ul>
                 </div>
 
@@ -118,12 +117,19 @@
             </div>
         </section>
 
-        <!-- PROJETOS DINÂMICOS -->
+        <!-- PROJETOS DINÂMICOS (preenchidos pelo home.js) -->
         <section id="projetos" class="container section">
 
             <h2>Projetos</h2>
 
-            <div id="projects" class="row g-4"></div>
+            <h3 class="subsecao">Projetos Acadêmicos (API)</h3>
+            <div id="projects-academico" class="row g-4"></div>
+
+            <h3 class="subsecao">Projetos Profissionais</h3>
+            <div id="projects-profissional" class="row g-4"></div>
+
+            <h3 class="subsecao">Projetos Pessoais</h3>
+            <div id="projects-pessoal" class="row g-4"></div>
 
         </section>
 
@@ -132,23 +138,32 @@
 
             <h2>Habilidades</h2>
 
+            <p class="legenda-niveis">
+                Nível: 1 = conheço o básico · 2 = já usei em atividades guiadas · 3 = desenvolvo com autonomia ·
+                4 = tenho domínio · 5 = fluente
+            </p>
+
             <div class="habilidades-grid">
 
                 <div class="habilidades-box">
                     <h4>Técnicas</h4>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Flask</span>
-                        <span>MySQL</span>
-                        <span>Git</span>
-                        <span>Jira</span>
-                        <span>Figma</span>
-                        <span>JavaScript</span>
-                        <span>AWS</span>
-                        <span>Docker</span>
-                    </div>
+
+                    <!-- TROQUE data-nivel="0" POR UM NÚMERO DE 1 A 5 EM CADA LINHA -->
+                    <div class="skill"><span>Python</span><span class="stars" data-nivel="3"></span></div>
+                    <div class="skill"><span>HTML</span><span class="stars" data-nivel="4"></span></div>
+                    <div class="skill"><span>CSS</span><span class="stars" data-nivel="4"></span></div>
+                    <div class="skill"><span>JavaScript</span><span class="stars" data-nivel="3"></span></div>
+                    <div class="skill"><span>Flask</span><span class="stars" data-nivel="2"></span></div>
+                    <div class="skill"><span>MySQL</span><span class="stars" data-nivel="4"></span></div>
+                    <div class="skill"><span>Git</span><span class="stars" data-nivel="4"></span></div>
+                    <div class="skill"><span>Jira</span><span class="stars" data-nivel="5"></span></div>
+                    <div class="skill"><span>Figma</span><span class="stars" data-nivel="5"></span></div>
+                    <div class="skill"><span>AWS</span><span class="stars" data-nivel="2"></span></div>
+                    <div class="skill"><span>Docker</span><span class="stars" data-nivel="3"></span></div>
+                    <div class="skill"><span>React</span><span class="stars" data-nivel="3"></span></div>
+                    <div class="skill"><span>TypeScript</span><span class="stars" data-nivel="3"></span></div>
+                    <div class="skill"><span>Node.js</span><span class="stars" data-nivel="2"></span></div>
+                    <div class="skill"><span>PostgreSQL</span><span class="stars" data-nivel="3"></span></div>
                 </div>
 
                 <div class="habilidades-box">
@@ -166,7 +181,6 @@
 
         </section>
 
-
         <!-- EVENTOS -->
         <section id="eventos" class="container section">
 
@@ -179,10 +193,12 @@
                     <div id="carouselInterfatec" class="carousel slide mt-2" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="static/imagens/eventos/interfatec.jpeg" class="d-block evento-img" alt="">
+                                <img src="static/imagens/eventos/interfatec.jpeg" class="d-block evento-img"
+                                    alt="Foto da participação no Interfatec">
                             </div>
                             <div class="carousel-item">
-                                <img src="static/imagens/eventos/certificado.png" class="d-block evento-img" alt="">
+                                <img src="static/imagens/eventos/certificado.png" class="d-block evento-img"
+                                    alt="Certificado de participação no Interfatec">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterfatec"
@@ -201,13 +217,16 @@
                     <div id="carouselScience" class="carousel slide mt-2" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="static/imagens/eventos/pit.jpeg" class="d-block evento-img" alt="">
+                                <img src="static/imagens/eventos/pit.jpeg" class="d-block evento-img"
+                                    alt="Foto da apresentação no Science and Business Connection">
                             </div>
                             <div class="carousel-item">
-                                <img src="static/imagens/eventos/colmeia.jpeg" class="d-block evento-img" alt="">
+                                <img src="static/imagens/eventos/colmeia.jpeg" class="d-block evento-img"
+                                    alt="Foto do evento Science and Business Connection">
                             </div>
                             <div class="carousel-item">
-                                <img src="static/imagens/eventos/pit.certif.png" class="d-block evento-img" alt="">
+                                <img src="static/imagens/eventos/pit.certif.png" class="d-block evento-img"
+                                    alt="Certificado de participação no Science and Business Connection">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselScience"
@@ -226,11 +245,11 @@
 
     </main>
 
-    <!-- scripts -->
-    <script src="data/projects.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/layout.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- scripts (defer mantém a ordem e espera o HTML carregar) -->
+    <script src="data/projects.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/layout.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 
 </html>

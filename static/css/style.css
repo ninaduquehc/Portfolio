@@ -594,3 +594,45 @@ nav {
 
     .project-title { font-size: 2rem; }
 }
+
+/* =========================
+   AJUSTES DO ROTEIRO
+========================= */
+
+.subsecao {
+    color: var(--cor-verde);
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+}
+
+.projetos-vazio { color: var(--cor-bege); opacity: 0.7; }
+
+.card-partner { font-size: 0.85rem; color: var(--cor-bege); }
+
+.legenda-niveis {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(206, 194, 149, 0.2);
+}
+
+.stars { color: var(--cor-bege); letter-spacing: 2px; }
+
+/* listas de hard e soft skills nos cards do projeto */
+.project-card ul { padding-left: 1.1rem; margin: 0; }
+.project-card li { color: #a8a8a8; font-size: 0.875rem; line-height: 1.7; margin-bottom: 0.2rem; }
+
+.project-back {
+    display: inline-block;
+    color: var(--cor-bege);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+.project-back:hover { color: var(--cor-verde); }

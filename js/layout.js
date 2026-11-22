@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <li>
           <i class="bi bi-envelope-fill"></i>
-          <a href="mailto:marinaduque2006@email.com">marinaduque2006@gmail.com</a>
+          <a href="mailto:marinaduque2006@gmail.com">marinaduque2006@gmail.com</a>
         </li>
 
         <li>
           <i class="bi bi-linkedin"></i>
-          <a href="https://linkedin.com" target="_blank">marina-cavalcanti</a>
+          <a href="https://www.linkedin.com/in/marina-cavalcanti-53b3503b8/" target="_blank">marina-cavalcanti</a>
         </li>
 
       </ul>
