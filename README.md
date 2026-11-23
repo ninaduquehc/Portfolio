@@ -8,7 +8,7 @@ Portfólio acadêmico digital desenvolvido com HTML, CSS e JavaScript para o cur
 
 - Apresentação pessoal com foto, formação, objetivos e áreas de interesse
 - Currículo com formação, cursos, medalhas e certificados
-- Projetos separados em Acadêmicos (API), Profissionais e Pessoais
+- Projetos separados em Acadêmicos (API), Atividades de Disciplina, Profissionais e Pessoais
 - Página de detalhes de cada projeto gerada dinamicamente via JavaScript, com empresa parceira, problema, solução, contribuições pessoais, hard skills e soft skills
 - Habilidades técnicas com nível de domínio (de 1 a 5 estrelas)
 - Eventos e participações com carrossel de imagens

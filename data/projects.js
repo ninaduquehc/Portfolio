@@ -104,7 +104,7 @@ const projects = [
     // =====================================================
     {
         id: "universidade-ficticia",
-        category: "pessoal",
+        category: "disciplina",
         title: "Universidade Fictícia - Studio KeyFrame",
         partner: "",
         description: "Site responsivo criado para prática de HTML, CSS e Bootstrap, desenvolvido em aula para fixação de conteúdo.",
@@ -133,7 +133,7 @@ const projects = [
 
     {
         id: "prototipacao-lumiere",
-        category: "pessoal",
+        category: "disciplina",
         title: "Prototipação - Loja Lumière",
         partner: "",
         description: "Wireframe, mockup e protótipo navegável de uma loja fictícia no Figma.",
@@ -165,7 +165,7 @@ const projects = [
 
     {
         id: "ecommerce-lumiere",
-        category: "pessoal",
+        category: "disciplina",
         title: "E-commerce Lumière",
         partner: "",
         description: "Loja virtual completa com backend em Flask, banco MySQL, Docker e deploy na AWS.",
