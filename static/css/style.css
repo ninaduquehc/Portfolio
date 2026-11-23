@@ -686,3 +686,48 @@ h2 { border-bottom-color: var(--cor-vinho); }
 
 /* o bege puro some no fundo bege do site, então o título "Sobre Mim" mantém a linha na cor do box */
 .sobre-texto h2 { border-bottom-color: var(--cor-vinho); }
+
+/* =========================
+   CARDS DO PROJETO: TEMA BEGE
+========================= */
+
+.project-card {
+    background: #e3d9b8;
+    border-left: 4px solid var(--cor-vinho);
+    box-shadow: var(--sombra-suave);
+}
+
+.project-card:hover {
+    border-color: var(--cor-verde);
+    box-shadow: var(--sombra-card);
+}
+
+.project-card h3 {
+    color: var(--cor-vinho);
+    opacity: 1;
+    border-bottom: 1px solid rgba(120, 19, 19, 0.2);
+}
+
+.project-card p,
+.project-card li {
+    color: #3a2a1a;
+}
+
+/* =========================
+   TAGS DE TECNOLOGIA: IGUAL ÀS COMPORTAMENTAIS
+========================= */
+
+.tech-tag {
+    background-color: var(--cor-bege);
+    color: var(--cor-preta);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transicao);
+}
+
+.tech-tag:hover {
+    background-color: var(--cor-verde);
+    transform: translateY(-3px);
+}
