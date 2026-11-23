@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // cada categoria do projects.js aponta para um container do index.html
-  const categorias = ["academico", "disciplina", "profissional", "pessoal"];
+  const categorias = ["academico", "disciplina", "profissional"];
 
   categorias.forEach(categoria => {
     const container = document.querySelector(`#projects-${categoria}`);

@@ -62,11 +62,13 @@ const projects = [
         ],
         link: "https://github.com/ninaduquehc/sistema-ordens-servico",
         images: [
-            "static/imagens/projetos/gestec_1.png",
-            "static/imagens/projetos/gestec_2.png",
-            "static/imagens/projetos/gestec_3.png",
-            "static/imagens/projetos/gestec_4.png",
-            "static/imagens/projetos/gestec_5.png"
+            "static/imagens/projetos/p1.png",
+            "static/imagens/projetos/p2.png",
+            "static/imagens/projetos/p3.png",
+            "static/imagens/projetos/p4.png",
+            "static/imagens/projetos/p5.png",
+            "static/imagens/projetos/p6.png",
+            "static/imagens/projetos/p7.png",
         ]
     },
 
